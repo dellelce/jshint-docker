@@ -1,3 +1,3 @@
 FROM node:18-alpine
 
-RUN apk update && apk add --no-cache jshint
+RUN npm install --cache /tmp/cache -g jshint && rm -rf /tmp/cache
