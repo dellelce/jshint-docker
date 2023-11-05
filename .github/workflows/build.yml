@@ -21,4 +21,4 @@ jobs:
       - name: Docker build
         run: docker build -t $IMAGE .
       - name: Add tag & push
-        run: docker tag $IMAGE $IMAGE:latest && docker push
+        run: docker tag $IMAGE $IMAGE:latest && docker push $IMAGE
